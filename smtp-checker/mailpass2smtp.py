@@ -32,14 +32,6 @@ wrn = b+'[\033[33m!\033[37m] '+z
 inf = b+'[\033[34mi\033[37m] '+z
 npt = b+'[\033[37m?\033[37m] '+z
 
-def show_banner():
-	banner = f"""
-wanker
-	"""
-	for line in banner.splitlines():
-		print(line)
-		time.sleep(0.05)
-
 def red(s,type=0):
 	return f'\033[{str(type)};31m'+str(s)+z
 
@@ -420,7 +412,7 @@ def printer(jobs_que, results_que):
 		time.sleep(0.04)
 
 signal.signal(signal.SIGINT, quit)
-show_banner()
+#show_banner()
 tune_network()
 check_ipv4()
 check_ipv6()
