@@ -1,3 +1,4 @@
+# coding: utf-8
 #!/usr/local/bin/python3
 
 import socket, threading, sys, ssl, time, re, os, random, signal, queue, base64
